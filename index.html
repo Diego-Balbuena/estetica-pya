@@ -10,8 +10,8 @@
         <h1>Estetica PyA</h1>
         <nav>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li>#<a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -20,14 +20,33 @@
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenida/o</h2>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>
+
+            </p>
         </section>
 
-        <section>
+        <section id="servicios">
             <h2>Servicios</h2>
             <article>
-                
+                <h3>Pestañas</h3>
+            </article>
+
+            <article>
+                <h3>Uñas</h3>
+            </article>
+
+            <article>
+                <h3>Cejas</h3>
+            </article>
+
+            <article>
+                <h3>Despilacion</h3>
+            </article>
+
+            <article>
+                <h3>Micropigmentación</h3>
             </article>
         </section>
 
@@ -44,8 +63,67 @@
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
 
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" required>
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+
+                <label for="edad">Edad</label>
+                <input type="number" id="">
+                <input type="number" name="edad" id="edad">
+
+                <label for="informacion-adicional">Informacion adicional</label>
+                <textarea name="informacion-adicional" id="informacion-adicional" placeholder="¿Hay algo que querés que sepamos antes de tu turno?"></textarea>
+                
+                <input type="checkbox" name="casilla-acuerdo" id="casilla-acuerdo">
+                <label for="casilla-acuerdo">Deseo recibir avisos de promociones y novedades</label>
+
+                <input type="checkbox" name="acepto-terminos" id="acepto-terminos" required>
+                <label for="acepto-terminos">Acepto terminos y condiciones</label>
+
+                <button type="submit">Reservar turno</button>
+            </form>
+
+            <form action="/reserva" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+
+                <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono" id="telefono">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad">
+
+                <fieldset>
+                    <legend>¿Tenés micropigmentación previa de otro establecimiento? ⚠️ De ser así, necesitamos que nos envíes una foto o asistir a una consulta para confirmar que el trabajo se podrá realizar.</legend>
+
+                    <input type="radio" name="microp-previa" id="microp-previa-si">
+                    <label for="microp-previa-si">Si</label>
+
+                    <input type="radio" name="microp-previa" id="microp-previa-no">
+                    <label for="microp-previa-no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Padecés alguna enfermedad? En caso afirmativo, ¿cuál? </legend>
+
+                    <input type="radio" name="padece-enfermedad" id="padece-enfermedad-si">
+                    <label for="padece-enfermedad-si">Si</label>
+
+                    <input type="radio" name="padece-enfermedad" id="padece-enfermedad-no">
+                    <label for="padece-enfermedad-no">No</label>
+
+                    <label for="detalle-enfermedad">Detalle:</label>
+                    <textarea name="detalle-enfermedad" id="detalle-enfermedad"></textarea>
+                </fieldset>
             </form>
         </section>
     </main>
