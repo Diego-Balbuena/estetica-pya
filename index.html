@@ -10,11 +10,10 @@
         <h1>Estetica PyA</h1>
         <nav>
             <ul>
-                <li>#<a href="#inicio">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,6 +30,7 @@
             <h2>Servicios</h2>
             <article>
                 <h3>Pestañas</h3>
+
             </article>
 
             <article>
@@ -42,7 +42,7 @@
             </article>
 
             <article>
-                <h3>Despilacion</h3>
+                <h3>Depilación</h3>
             </article>
 
             <article>
@@ -50,85 +50,292 @@
             </article>
         </section>
 
-        <section>
-
-        </section>
-
-        <section>
+        <section id="reserva">
             <h2>Reserva tu turno</h2>
+
+            <h3>Turno General</h3>
             <form action="/reserva" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
+                <fieldset>
+                    <legend>Seleccioná fecha y hora</legend>
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" required>
+                    <label for="fecha_general">Fecha del turno:</label>
+                    <input type="date" name="fecha_general" id="fecha_general" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="hora_general">Hora del turno:</label>
+                    <select name="hora_general" id="hora_general" required>
+                        <option value="08:00">08:00 hs</option>
+                        <option value="10:00">10:00 hs</option>
+                        <option value="12:00">12:00 hs</option>
+                        <option value="14:00">14:00 hs</option>
+                        <option value="16:00">16:00 hs</option>
+                        <option value="18:00">18:00 hs</option>
+                    </select>
+                </fieldset>
 
-                <label for="edad">Edad</label>
-                <input type="number" id="">
-                <input type="number" name="edad" id="edad">
+                <fieldset>
+                    <legend>Información personal</legend>
 
-                <label for="informacion-adicional">Informacion adicional</label>
-                <textarea name="informacion-adicional" id="informacion-adicional" placeholder="¿Hay algo que querés que sepamos antes de tu turno?"></textarea>
+                    <label for="nombre_general">Nombre:</label>
+                    <input type="text" id="nombre_general" name="nombre_general" required>
+
+                    <label for="apellido_general">Apellido:</label>
+                    <input type="text" id="apellido_general" name="apellido_general" required>
+
+                    <label for="telefono_general">Teléfono</label>
+                    <input type="tel" name="telefono_general" id="telefono_general" required>
+
+                    <label for="email_general">Email</label>
+                    <input type="email" id="email_general" name="email_general" required>
+
+                    <label for="edad_general">Edad</label>
+                    <input type="number" name="edad_general" id="edad_general" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+
+                    <textarea 
+                    name="informacion_adicional_general" 
+                    id="informacion_adicional_general" 
+                    placeholder="¿Hay algo que querés que sepamos antes de tu turno?"></textarea>
+                </fieldset>
                 
-                <input type="checkbox" name="casilla-acuerdo" id="casilla-acuerdo">
-                <label for="casilla-acuerdo">Deseo recibir avisos de promociones y novedades</label>
+                <fieldset>
+                    <legend>Consentimientos</legend>
 
-                <input type="checkbox" name="acepto-terminos" id="acepto-terminos" required>
-                <label for="acepto-terminos">Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="casilla_acuerdo_general" id="casilla_acuerdo_general">
+                    <label for="casilla_acuerdo_general">Deseo recibir avisos de promociones y novedades</label>
+
+                    <input type="checkbox" name="acepto_terminos_general" id="acepto_terminos_general" required>
+                    <label for="acepto_terminos_general">Acepto terminos y condiciones</label>
+                </fieldset>
 
                 <button type="submit">Reservar turno</button>
             </form>
 
-            <form action="/reserva" method="post">
-
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
-
-                <label for="telefono">Teléfono</label>
-                <input type="number" name="telefono" id="telefono">
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-
-                <label for="edad">Edad</label>
-                <input type="number" name="edad" id="edad">
+            <h3>Turno de Micropigmentación</h3>
+            <form action="/reserva" method="post" id="mircrop">
 
                 <fieldset>
-                    <legend>¿Tenés micropigmentación previa de otro establecimiento? ⚠️ De ser así, necesitamos que nos envíes una foto o asistir a una consulta para confirmar que el trabajo se podrá realizar.</legend>
+                    <legend>Seleccioná fecha y hora</legend>
 
-                    <input type="radio" name="microp-previa" id="microp-previa-si">
-                    <label for="microp-previa-si">Si</label>
+                    <label for="fecha_mircrop">Fecha del turno:</label>
+                    <input type="date" name="fecha_mircrop" id="fecha_mircrop" required>
 
-                    <input type="radio" name="microp-previa" id="microp-previa-no">
-                    <label for="microp-previa-no">No</label>
+                    <label for="hora_mircrop">Hora del turno:</label>
+                    <select name="hora_mircrop" id="hora_mircrop" required>
+                        <option value="08:00">08:00 hs</option>
+                        <option value="11:00">11:00 hs</option>
+                        <option value="14:00">14:00 hs</option>
+                        <option value="17:00">17:00 hs</option>
+                    </select>
                 </fieldset>
 
                 <fieldset>
-                    <legend>¿Padecés alguna enfermedad? En caso afirmativo, ¿cuál? </legend>
+                    <legend>Información personal</legend>
 
-                    <input type="radio" name="padece-enfermedad" id="padece-enfermedad-si">
-                    <label for="padece-enfermedad-si">Si</label>
+                    <label for="nombre_mircrop">Nombre</label>
+                    <input type="text" name="nombre_mircrop" id="nombre_mircrop" required>
 
-                    <input type="radio" name="padece-enfermedad" id="padece-enfermedad-no">
-                    <label for="padece-enfermedad-no">No</label>
+                    <label for="apellido_mircrop">Apellido</label>
+                    <input type="text" name="apellido_mircrop" id="apellido_mircrop" required>
 
-                    <label for="detalle-enfermedad">Detalle:</label>
-                    <textarea name="detalle-enfermedad" id="detalle-enfermedad"></textarea>
+                    <label for="telefono_mircrop">Teléfono</label>
+                    <input type="tel" name="telefono_mircrop" id="telefono_mircrop" required>
+
+                    <label for="email_mircrop">Email</label>
+                    <input type="email" name="email_mircrop" id="email_mircrop" required>
+
+                    <label for="edad_mircrop">Edad</label>
+                    <input type="number" name="edad_mircrop" id="edad_mircrop" required>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Micropigmentación previa</legend>
+                    <p>⚠️ Si es de otro establecimiento, necesitamos una foto o consulta previa.</p>
+
+                    <input type="radio" name="microp_previa" id="microp_previa_si" value="si" required>
+                    <label for="microp_previa_si">Si</label>
+
+                    <input type="radio" name="microp_previa" id="microp_previa_no" value="no">
+                    <label for="microp_previa_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Enfermedades</legend>
+                    <p>¿Padecés alguna enfermedad? ¿cuál?</p>
+
+                    <input type="radio" name="padece_enfermedad" id="padece_enfermedad_si" value="si" required>
+                    <label for="padece_enfermedad_si">Si</label>
+
+                    <input type="radio" name="padece_enfermedad" id="padece_enfermedad_no" value="no">
+                    <label for="padece_enfermedad_no">No</label>
+
+                    <label for="detalle_enfermedad">Detalle:</label>
+                    <textarea 
+                    name="detalle_enfermedad" 
+                    id="detalle_enfermedad" 
+                    aria-describedby="ayuda_enfermedad"
+                    placeholder="Describe brevemente la enfermedad...">
+                    </textarea>
+                    <p id="ayuda_enfermedad">Este campo solo se completa si seleccionaste "Sí".</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Medicación actual</legend>
+                    <p>¿Tomás alguna medicación actualmente? ¿cuál?</p>
+
+                    <input type="radio" name="medicacion_actual" id="medicacion_actual_si" value="si" required>
+                    <label for="medicacion_actual_si">Si</label>
+
+                    <input type="radio" name="medicacion_actual" id="medicacion_actual_no" value="no">
+                    <label for="medicacion_actual_no">No</label>
+
+                    <label for="detalle_medicacion">Detalle:</label>
+                    <textarea 
+                    name="detalle_medicacion" 
+                    id="detalle_medicacion" 
+                    aria-describedby="ayuda_medicacion"
+                    placeholder="Describe brevemente la medicación...">
+                    </textarea>
+                    <p id="ayuda_medicacion">Este campo solo se completa si seleccionaste "Sí".</p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tratamiento con Roacután</legend>
+                    <p>¿Estuviste o estás en tratamiento con este fármaco?</p>
+
+                    <input type="radio" name="tratamiento_roacutan" id="tratamiento_roacutan_si" value="si" required>
+                    <label for="tratamiento_roacutan_si">Si</label>
+
+                    <input type="radio" name="tratamiento_roacutan" id="tratamiento_roacutan_no" value="no">
+                    <label for="tratamiento_roacutan_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Diabetes o tiroides</legend>
+                    <p>¿Padecés alguna de estas condiciones?</p>
+
+                    <input type="radio" name="diabetes_tiroides" id="diabetes_tiroides_si" value="si" required>
+                    <label for="diabetes_tiroides_si">Si</label>
+
+                    <input type="radio" name="diabetes_tiroides" id="diabetes_tiroides_no" value="no">
+                    <label for="diabetes_tiroides_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Queloides</legend>
+                    <p>¿Estuviste o estás en tratamiento por queloides o tenés tendencia a formarlos?</p>
+
+                    <input type="radio" name="tratamiento_queloides" id="tratamiento_queloides_si" value="si" required>
+                    <label for="tratamiento_queloides_si">Si</label>
+
+                    <input type="radio" name="tratamiento_queloides" id="tratamiento_queloides_no" value="no">
+                    <label for="tratamiento_queloides_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Anticoagulantes</legend>
+                    <p>¿Tomás anticoagulantes actualmente?</p>
+
+                    <input type="radio" name="anticoagulantes" id="anticoagulantes_si" value="si" required>
+                    <label for="anticoagulantes_si">Si</label>
+
+                    <input type="radio" name="anticoagulantes" id="anticoagulantes_no" value="no">
+                    <label for="anticoagulantes_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ácidos o peeling</legend>
+                    <p>¿Te hiciste tratamientos con ácidos o peeling? ¿Hace cuánto tiempo?</p>
+
+
+                    <input type="radio" name="acidos_peeling" id="acidos_peeling_si" value="si" required>
+                    <label for="acidos_peeling_si">Si</label>
+
+                    <input type="radio" name="acidos_peeling" id="acidos_peeling_no" value="no">
+                    <label for="acidos_peeling_no">No</label>
+
+                    <label for="detalle_acidos_peeling">Detalle:</label>
+                    <textarea 
+                    name="detalle_acidos_peeling" 
+                    id="detalle_acidos_peeling"
+                    aria-describedby="ayuda_acidos_peeling"
+                    placeholder="Describe brevemente...">
+                    </textarea>
+                    <p id="ayuda_acidos_peeling">Este campo solo se completa si seleccionaste "Sí".</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Productos inyectados</legend>
+                    <p>¿Tuviste algún producto inyectado en la zona en los últimos meses?</p>
+
+                    <input type="radio" name="producto_inyectado" id="producto_inyectado_si" value="si" required>
+                    <label for="producto_inyectado_si">Si</label>
+
+                    <input type="radio" name="producto_inyectado" id="producto_inyectado_no" value="no">
+                    <label for="producto_inyectado_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Embarazo o lactancia</legend>
+                    <p>¿Estás embarazada o en período de lactancia?</p>
+
+                    <input type="radio" name="embarazada_lactancia" id="embarazada_lactancia_si" value="si" required>
+                    <label for="embarazada_lactancia_si">Si</label>
+
+                    <input type="radio" name="embarazada_lactancia" id="embarazada_lactancia_no" value="no">
+                    <label for="embarazada_lactancia_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tratamiento oncológico</legend>
+                    <p>¿Estás en tratamiento oncológico actualmente?</p>
+
+                    <input type="radio" name="tratamiento_oncologico" id="tratamiento_oncologico_si" value="si" required>
+                    <label for="tratamiento_oncologico_si">Si</label>
+
+                    <input type="radio" name="tratamiento_oncologico" id="tratamiento_oncologico_no" value="no">
+                    <label for="tratamiento_oncologico_no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información adicional</legend>
+
+                    <textarea 
+                    name="informacion_adicional_mircrop" 
+                    id="informacion_adicional_mircrop" 
+                    placeholder="¿Hay algo que querés que sepamos antes de tu turno?">
+                    </textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Consentimientos</legend>
+                    <input type="checkbox" name="casilla_acuerdo_mircrop" id="casilla_acuerdo_mircrop">
+                    <label for="casilla_acuerdo_mircrop">Deseo recibir avisos de promociones y novedades</label>
+
+                    <input type="checkbox" name="acepto_terminos_mircrop" id="acepto_terminos_mircrop" required>
+                    <label for="acepto_terminos_mircrop">Acepto terminos y condiciones</label>
+                </fieldset>
+                
+                <button type="submit">Reservar turno</button>
             </form>
         </section>
     </main>
 
     <footer>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul class="redes">
+                <li><a href="https://wa.me/5493515567914" target="_blank" aria-label="WhatsApp"><img src="imagenes/whatsapp.png" alt="WhatsApp" width="32" height="32"></a></li>
+
+                <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="imagenes/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" aria-label="Facebook"><img src="imagenes/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+            </ul>
+        </section>
         <p>© 2026 Centro Estetico PyA</p>
     </footer>
 </body>
