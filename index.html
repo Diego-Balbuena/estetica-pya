@@ -21,6 +21,14 @@
     <main>
         <section id="inicio">
             <h2>Inicio</h2>
+            <img src="./imagenes/Inicio.png" alt="Banner de inicio de PyA: Tu Belleza, Nuestra Precisión con diagnóstico previo y técnicas avanzadas">
+            <figure>
+                <video controls width="400">
+                    <source src="./videos/centro_estetico.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+                <figcaption>Conocé nuestro centro estético</figcaption>
+            </figure>
 
             <p>En PyA ofrecemos servicios especializados, donde cada procedimiento se realiza con diagnóstico previo y un enfoque completamente personalizado.</p>
             <p>Combinamos técnicas avanzadas, productos de alta calidad y un criterio estético cuidado para lograr resultados naturales, armónicos y duraderos.</p>
@@ -31,6 +39,7 @@
             
             <article>
                 <h3>Pestañas</h3>
+                <img src="./imagenes/Pestañas.png" alt="Banner del servicio de pestañas – P & A">
                 
                 <h4>Beneficios</h4>
                 <p>Lográs una mirada más abierta, expresiva y definida, reduciendo el uso de máscara. Resultados cómodos, livianos y duraderos que acompañan tu rutina diaria.</p>
@@ -104,6 +113,7 @@
 
             <article>
                 <h3>Uñas</h3>
+                <img src="./imagenes/Uñas.png" alt="Banner del servicio de uñas – P & A">
 
                 <h4>Beneficios</h4>
                 <p>Manos siempre prolijas, resistentes y elegantes por más tiempo. Evitamos quiebres y desgaste, logrando un acabado duradero y estético.</p>
@@ -173,6 +183,7 @@
 
             <article>
                 <h3>Cejas</h3>
+                <img src="./imagenes/Cejas.png" alt="Banner del servicio de cejas – P & A">
                 
                 <h4>Beneficios</h4>
                 <p>Realzamos tu mirada logrando cejas más definidas, simétricas y en armonía con tu rostro. El resultado: una expresión más prolija y natural, sin necesidad de maquillarlas todos los días.</p>
@@ -236,6 +247,7 @@
 
             <article>
                 <h3>Micropigmentación</h3>
+                <img src="./imagenes/Micropigmentacion.png" alt="Banner del servicio de micropigmentación – P & A">
 
                 <h4>Beneficios</h4>
                 <p>Cejas definidas, simétricas y de larga duración. Permite corregir asimetrías, rellenar espacios y lograr un resultado natural que se mantiene en el tiempo, simplificando tu rutina diaria.</p>
@@ -307,6 +319,7 @@
 
         <section id="reserva">
             <h2>Reserva tu turno</h2>
+            <img src="./imagenes/Servicio.png" alt="Cartel de estética P & A con texto Seleccioná fecha, hora y servicio">
 
             <h3 id="turno_general">Turno General</h3>
             <form action="/reserva" method="post">
@@ -334,7 +347,7 @@
                     </select>
 
                     <label for="seleccion_turno_general">Selección del servicio:</label>
-                    <select name="seleccion_turno_general" id="seleccion_turno_general">
+                    <select name="seleccion_turno_general" id="seleccion_turno_general" required>
                         <option value="Pestañas pelo x pelo Rimmel">Pestañas pelo x pelo Rimmel</option>
                         <option value="Pestañas tecnológicas 4D W">Pestañas tecnológicas 4D W</option>
                         <option value="Lifting y tinte nutritivo de pestañas">Lifting y tinte nutritivo de pestañas</option>
@@ -411,7 +424,7 @@
                     </select>
 
                     <label for="seleccion_turno_micro">Selección del servicio:</label>
-                    <select name="seleccion_turno_micro" id="seleccion_turno_micro">
+                    <select name="seleccion_turno_micro" id="seleccion_turno_micro" required>
                         <option value="Micropigmentación Cejas">Micropigmentación Cejas</option>
                         <option value="Micropigmentación Labios | Full Lips / Acuarela Lips">Micropigmentación Labios | Full Lips / Acuarela Lips</option>
                         <option value="Micropigmentación Labios | Neutralización de Labios">Micropigmentación Labios | Neutralización de Labios</option>
