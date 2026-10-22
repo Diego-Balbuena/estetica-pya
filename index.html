@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estetica PyA</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
     <header>
-        <h1>Estetica PyA</h1>
-        <nav>
-            <ul>
+        <nav class="contenedor-header">
+            <a href="index.html" class="logo-header">
+                <img src="assets/img/Logo PyA.png" alt="Logo de PyA" class="logo">
+                <p>Estetica PyA</p>
+            </a>
+            <ul class="vinculos-header">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#reserva">Reserva</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto">Nosotros</a></li>
+                <li><a href="#reserva">Reservar Turno</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Iniciooo</h2>
-            <img src="./imagenes/Inicio.png" alt="Banner de inicio de PyA: Tu Belleza, Nuestra Precisión con diagnóstico previo y técnicas avanzadas">
-            <figure>
-                <video controls width="400">
+        <section id="inicio" class="contenedor-inicio">
+            <div class="texto-inicio">
+
+            </div>
+            <h2>PyA</h2>
+            <h3>Tu belleza, Nuestra precision</h3>
+            <h4>Con diagnostico previo y tecnicas avanzadas</h4>
+            <img src="./assets/img/inicio_sin_texto.jpg" alt="Banner de inicio de PyA: Tu Belleza, Nuestra Precisión con diagnóstico previo y técnicas avanzadas">
+            <!-- <p>En PyA ofrecemos servicios especializados, donde cada procedimiento se realiza con diagnóstico previo y un enfoque completamente personalizado.</p>
+            <p>Combinamos técnicas avanzadas, productos de alta calidad y un criterio estético cuidado para lograr resultados naturales, armónicos y duraderos.</p> -->
+        </section>
+
+<!-- <figure>
+                <video controls>
                     <source src="./videos/centro_estetico.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de video.
                 </video>
                 <figcaption>Conocé nuestro centro estético</figcaption>
-            </figure>
-
-            <p>En PyA ofrecemos servicios especializados, donde cada procedimiento se realiza con diagnóstico previo y un enfoque completamente personalizado.</p>
-            <p>Combinamos técnicas avanzadas, productos de alta calidad y un criterio estético cuidado para lograr resultados naturales, armónicos y duraderos.</p>
-        </section>
-
+    </figure> -->
         <section id="servicios">
             <h2>Servicios</h2>
             

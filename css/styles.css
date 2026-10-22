@@ -1,0 +1,83 @@
+:root{
+    /* Colores */
+    --bg-oscuro: #0e0e0e;
+    --bg-tarjeta: #1a1a1a;
+    --dorado: #d4af37;
+    --dorado-hover: #e6ca65;
+    --texto-blanco: #ffffff;
+    --texto-gris: #b3b3b3;
+
+    /* Tipografías */
+    --fuente-titulo: 'Playfair Display', serif;
+    --fuente-cuerpo: 'Montserrat', sans-serif;
+}
+
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--bg-oscuro);
+    color: var(--texto-blanco);
+}
+
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--dorado);
+    font-weight: 700;
+}
+
+.logo-header{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--texto-blanco);
+    border-bottom: 1px solid var(--texto-blanco);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px 0px 10px 10px;
+}
+
+.vinculos-header{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.vinculos-header li{
+    padding: 10px;
+    text-align: center;
+}
+.vinculos-header li:hover{
+    background-color: var(--dorado-hover);
+}
+
+.vinculos-header a{
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+
+.contenedor-inicio img{
+    max-width: 100%;
+}
+
+.contenedor-inicio h2{
+    
+}

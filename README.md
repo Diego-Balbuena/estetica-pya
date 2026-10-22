@@ -1,6 +1,6 @@
 # Estética PyA
 
-Página web de promoción para un centro estético, desarrollada con HTML semántico.
+Página web de promoción para un centro estético, desarrollada con HTML y CSS.
 
 ## Contenido
 - Información de servicios (pestañas, uñas, cejas, micropigmentación)
@@ -8,4 +8,5 @@ Página web de promoción para un centro estético, desarrollada con HTML semán
 - Multimedia: imágenes y video de presentación
 
 ## Tecnologías
-- HTML5 semántico
+- HTML5
+- CSS3
