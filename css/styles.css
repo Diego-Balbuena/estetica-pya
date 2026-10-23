@@ -67,6 +67,7 @@ body{
 }
 .vinculos-header li:hover{
     background-color: var(--dorado-hover);
+    cursor: pointer;
 }
 
 .vinculos-header a{
@@ -120,6 +121,70 @@ body{
     font-weight: 300;
 }
 
+.banner-inicio{
+    text-align: center;
+    }
+
 .banner-inicio img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.servicios-inicio h2{
+    font-family: var(--fuente-titulo);
+    color: var(--texto-blanco);
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-cards{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.card-servicio{
+    border: 2px solid var(--bg-tarjeta);
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.card-servicio img{
+    width: 100%;
+}
+
+.card-servicio span{
+    width: 60%;
+    background-color: var(--dorado);
+    border: 1px solid #967c26;
+    color: var(--texto-blanco);
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-servicio span:hover{
+    background-color: var(--dorado-hover);
+    cursor: pointer;
+}
+
+.card-servicio h3{
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
