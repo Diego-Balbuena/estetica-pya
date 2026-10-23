@@ -166,7 +166,7 @@ body{
     width: 100%;
 }
 
-.card-servicio span{
+.btn-servicio {
     width: 60%;
     background-color: var(--dorado);
     border: 1px solid #967c26;
@@ -177,9 +177,10 @@ body{
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 
-.card-servicio span:hover{
+.btn-servicio:hover {
     background-color: var(--dorado-hover);
     cursor: pointer;
 }
