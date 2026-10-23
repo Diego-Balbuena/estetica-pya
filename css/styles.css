@@ -160,6 +160,7 @@ body{
     gap: 15px;
     overflow: hidden;
     align-items: center;
+    box-shadow: 0 4px 20px rgba(31, 31, 31, 0.4);
 }
 
 .card-servicio img{
@@ -188,4 +189,62 @@ body{
 .card-servicio h3{
     letter-spacing: 1.2px;
     text-transform: uppercase;
+}
+
+.nosotros-inicio{
+    margin-top: 50px;
+}
+
+.nosotros-inicio h2{
+    font-family: var(--fuente-titulo);
+    color: var(--texto-blanco);
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-nosotros{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nosotros-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.nosotros-texto h3{
+    text-transform: uppercase;
+    color: var(--dorado);
+}
+
+.contenedor-nosotros figure {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--bg-tarjeta);
+    box-shadow: 0 4px 20px rgba(31, 31, 31, 0.4);
+}
+
+.contenedor-nosotros figure video {
+    width: 100%;
+}
+
+.contenedor-nosotros figcaption {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 12px;
+    color: var(--texto-gris);
+    text-align: center;
+    font-style: italic;
 }
