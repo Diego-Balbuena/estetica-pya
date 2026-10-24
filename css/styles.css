@@ -62,17 +62,22 @@ body{
 }
 
 .vinculos-header li{
-    padding: 10px;
     text-align: center;
 }
-.vinculos-header li:hover{
-    background-color: var(--dorado-hover);
-    cursor: pointer;
+.vinculos-header a:hover{
+    color: var(--bg-oscuro);
 }
 
 .vinculos-header a{
     text-decoration: none;
     color: var(--texto-blanco);
+    display: block;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.vinculos-header a.activo {
+    color: var(--bg-oscuro);
 }
 
 .contenedor-inicio {
@@ -164,6 +169,7 @@ body{
 
 .card-servicio img{
     width: 100%;
+    display: block;
 }
 
 .btn-servicio {
@@ -178,11 +184,14 @@ body{
     text-transform: uppercase;
     margin-bottom: 15px;
     text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
 .btn-servicio:hover {
     background-color: var(--dorado-hover);
     cursor: pointer;
+    
 }
 
 .card-servicio h3{
@@ -263,6 +272,8 @@ body{
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
 .btn-reserva:hover {
@@ -316,6 +327,10 @@ footer {
     width: 22px;
     height: 22px;
     object-fit: cover;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 768px) {
@@ -411,5 +426,11 @@ footer {
         max-width: 300px;
         font-size: 22px;
     }
+
+    .vinculos-header a.activo{
+        color: var(--bg-oscuro);
+        border-bottom: 2px solid var(--bg-oscuro);
+    }
 }
+
 
