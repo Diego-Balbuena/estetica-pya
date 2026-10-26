@@ -204,6 +204,13 @@ textarea + p {
         max-width: 1200px;
         padding: 30px;
         margin-bottom: 40px;
+        transition: all 0.3s ease;
+    }
+
+    .bloque-reserva:hover{
+        border-color: rgba(218, 165, 32, 0.4); 
+        box-shadow: 0 0 40px rgba(218, 165, 32, 0.15); 
+        transform: translateY(-2px); 
     }
 
     .bloque-reserva h2 {

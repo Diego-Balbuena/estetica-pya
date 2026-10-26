@@ -156,7 +156,6 @@ body{
 }
 
 .card-servicio{
-    border: 2px solid var(--bg-tarjeta);
     border-radius: 10px;
     width: 80%;
     display: flex;
@@ -164,7 +163,9 @@ body{
     gap: 15px;
     overflow: hidden;
     align-items: center;
-    box-shadow: 0 4px 20px rgba(31, 31, 31, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.06);
+    background-color: var(--bg-tarjeta);
 }
 
 .card-servicio img{
@@ -412,6 +413,13 @@ html{
 
     .card-servicio {
         width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .card-servicio:hover{
+        border-color: rgba(218, 165, 32, 0.4); 
+        box-shadow: 0 0 40px rgba(218, 165, 32, 0.15); 
+        transform: translateY(-2px); 
     }
 
     .nosotros-inicio h2{
