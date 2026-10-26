@@ -127,3 +127,46 @@ textarea + p {
     margin-bottom: 8px;
     margin-top: -8px;
 }
+
+@media (min-width: 768px) {
+    
+    .banner-reserva{
+        width: 100%;
+    }
+
+    .banner-reserva img {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 24px;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(0.75);
+    }
+
+    .bloque-reserva {
+        width: 90%;
+        max-width: 1200px;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    .bloque-reserva h2 {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 1.2rem;
+    }
+
+    input:not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        padding: 12px;
+    }
+}
