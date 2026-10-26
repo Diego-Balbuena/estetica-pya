@@ -1,0 +1,129 @@
+/* Reserva */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-reserva {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.oculto-seo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.banner-reserva img {
+    width: 90%;
+    border-radius: 10px;
+    margin: 12px auto;
+}
+
+.banner-reserva {
+    text-align: center;
+}
+
+.bloque-reserva {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 24px;
+    background-color: var(--bg-tarjeta);
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+}
+
+.bloque-reserva h2 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+label {
+    margin-bottom: 3px;
+}
+
+textarea {
+    min-height: 60px;
+    resize: none;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.campo-radio,
+.field-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+.field-checkbox label,
+.campo-radio label {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+fieldset p {
+    margin-bottom: 12px;
+}
+
+textarea + p {
+    margin-bottom: 8px;
+    margin-top: -8px;
+}

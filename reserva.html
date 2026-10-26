@@ -12,7 +12,7 @@
 
     <!-- Link a CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/reserva.css">
 
 </head>
 <body>
@@ -34,23 +34,23 @@
     <main>
         <section id="reserva" class="contenedor-reserva">
 
-            <h2>Reserva tu turno</h2>
+            <h1 class="oculto-seo">Reserva tu turno</h1>
             
             <div class="banner-reserva">
                 <img src="./assets/img/reserva.png" alt="Cartel de estética P & A con texto Seleccioná fecha, hora y servicio">
             </div>
             
             <div class="bloque-reserva reserva-general">
-                <h3 id="turno-general">Turno General</h3>
+                <h2 id="turno-general">Turno General</h2>
                 <form action="/reserva" method="post" id="general">
 
                     <fieldset>
                         <legend>Seleccioná fecha, hora y servicio</legend>
 
-                        <label for="fecha-general">Fecha del turno:</label>
+                        <label for="fecha-general">Fecha del turno :</label>
                         <input type="date" name="fecha-general" id="fecha-general" required>
 
-                        <label for="hora-general">Hora del turno:</label>
+                        <label for="hora-general">Hora del turno :</label>
                         <select name="hora-general" id="hora-general" required>
                             <option value="08:00">08:00 hs</option>
                             <option value="09:00">09:00 hs</option>
@@ -66,7 +66,7 @@
                             <option value="19:00">19:00 hs</option>
                         </select>
 
-                        <label for="seleccion-turno-general">Selección del servicio:</label>
+                        <label for="seleccion-turno-general">Selección del servicio :</label>
                         <select name="seleccion-turno-general" id="seleccion-turno-general" required>
                             <option value="Pestañas pelo x pelo Rimmel">Pestañas pelo x pelo Rimmel</option>
                             <option value="Pestañas tecnológicas 4D W">Pestañas tecnológicas 4D W</option>
@@ -83,19 +83,19 @@
                     <fieldset>
                         <legend>Información personal</legend>
 
-                        <label for="nombre-general">Nombre:</label>
+                        <label for="nombre-general">Nombre :</label>
                         <input type="text" id="nombre-general" name="nombre-general" required>
 
-                        <label for="apellido-general">Apellido:</label>
+                        <label for="apellido-general">Apellido :</label>
                         <input type="text" id="apellido-general" name="apellido-general" required>
 
-                        <label for="telefono-general">Teléfono</label>
+                        <label for="telefono-general">Teléfono :</label>
                         <input type="tel" name="telefono-general" id="telefono-general" required>
 
-                        <label for="email-general">Email</label>
+                        <label for="email-general">Email :</label>
                         <input type="email" id="email-general" name="email-general" required>
 
-                        <label for="edad-general">Edad</label>
+                        <label for="edad-general">Edad :</label>
                         <input type="number" name="edad-general" id="edad-general" min="18" max="100" required>
                     </fieldset>
 
@@ -112,11 +112,16 @@
                     <fieldset>
                         <legend>Consentimientos</legend>
 
-                        <input type="checkbox" name="casilla-acuerdo-general" id="casilla-acuerdo-general">
-                        <label for="casilla-acuerdo-general">Deseo recibir avisos de promociones y novedades</label>
-
-                        <input type="checkbox" name="acepto-terminos-general" id="acepto-terminos-general" required>
-                        <label for="acepto-terminos-general">Acepto términos y condiciones</label>
+                        <div class="field-checkbox">
+                            <input type="checkbox" name="casilla-acuerdo-general" id="casilla-acuerdo-general">
+                            <label for="casilla-acuerdo-general">Deseo recibir avisos de promociones y novedades</label>
+                        </div>
+                        
+                        <div class="field-checkbox">
+                            <input type="checkbox" name="acepto-terminos-general" id="acepto-terminos-general" required>
+                            <label for="acepto-terminos-general">Acepto términos y condiciones</label>
+                        </div>
+                        
                     </fieldset>
 
                     <button type="submit">Reservar turno</button>
@@ -124,19 +129,17 @@
             </div>
             
 
-            <hr>
-
             <div class="bloque-reserva reserva-micro">
-                <h3 id="turno-micro">Turno de Micropigmentación</h3>
+                <h2 id="turno-micro">Turno de Micropigmentación</h2>
                 <form action="/reserva" method="post" id="micro">
 
                     <fieldset>
                         <legend>Seleccioná fecha, hora y servicio</legend>
 
-                        <label for="fecha-micro">Fecha del turno:</label>
+                        <label for="fecha-micro">Fecha del turno :</label>
                         <input type="date" name="fecha-micro" id="fecha-micro" required>
 
-                        <label for="hora-micro">Hora del turno:</label>
+                        <label for="hora-micro">Hora del turno :</label>
                         <select name="hora-micro" id="hora-micro" required>
                             <option value="08:00">08:00 hs</option>
                             <option value="10:00">10:00 hs</option>
@@ -146,7 +149,7 @@
                             <option value="18:00">18:00 hs</option>
                         </select>
 
-                        <label for="seleccion-turno-micro">Selección del servicio:</label>
+                        <label for="seleccion-turno-micro">Selección del servicio :</label>
                         <select name="seleccion-turno-micro" id="seleccion-turno-micro" required>
                             <option value="Micropigmentación Cejas">Micropigmentación Cejas</option>
                             <option value="Micropigmentación Labios | Full Lips / Acuarela Lips">Micropigmentación Labios | Full Lips / Acuarela Lips</option>
@@ -157,19 +160,19 @@
                     <fieldset>
                         <legend>Información personal</legend>
 
-                        <label for="nombre-micro">Nombre</label>
+                        <label for="nombre-micro">Nombre :</label>
                         <input type="text" name="nombre-micro" id="nombre-micro" required>
 
-                        <label for="apellido-micro">Apellido</label>
+                        <label for="apellido-micro">Apellido :</label>
                         <input type="text" name="apellido-micro" id="apellido-micro" required>
 
-                        <label for="telefono-micro">Teléfono</label>
+                        <label for="telefono-micro">Teléfono :</label>
                         <input type="tel" name="telefono-micro" id="telefono-micro" required>
 
-                        <label for="email-micro">Email</label>
+                        <label for="email-micro">Email :</label>
                         <input type="email" name="email-micro" id="email-micro" required>
 
-                        <label for="edad-micro">Edad</label>
+                        <label for="edad-micro">Edad :</label>
                         <input type="number" name="edad-micro" id="edad-micro" min="18" max="100" required>
                     </fieldset>
 
@@ -177,24 +180,34 @@
                         <legend>Micropigmentación previa</legend>
                         <p>⚠️ Si es de otro establecimiento, necesitamos una foto o consulta previa.</p>
 
-                        <input type="radio" name="microp-previa" id="microp-previa-si" value="si" required>
-                        <label for="microp-previa-si">Si</label>
-
-                        <input type="radio" name="microp-previa" id="microp-previa-no" value="no">
-                        <label for="microp-previa-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="microp-previa" id="microp-previa-si" value="si" required>
+                            <label for="microp-previa-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="microp-previa" id="microp-previa-no" value="no">
+                            <label for="microp-previa-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Enfermedades</legend>
                         <p>¿Padecés alguna enfermedad? ¿cuál?</p>
 
-                        <input type="radio" name="padece-enfermedad" id="padece-enfermedad-si" value="si" required>
-                        <label for="padece-enfermedad-si">Si</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="padece-enfermedad" id="padece-enfermedad-si" value="si" required>
+                            <label for="padece-enfermedad-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="padece-enfermedad" id="padece-enfermedad-no" value="no">
+                            <label for="padece-enfermedad-no">No</label>
+                        </div>
+                        
 
-                        <input type="radio" name="padece-enfermedad" id="padece-enfermedad-no" value="no">
-                        <label for="padece-enfermedad-no">No</label>
-
-                        <label for="detalle-enfermedad">Detalle:</label>
+                        <label for="detalle-enfermedad">Detalle :</label>
                         <textarea 
                         name="detalle-enfermedad" 
                         id="detalle-enfermedad" 
@@ -208,13 +221,18 @@
                         <legend>Medicación actual</legend>
                         <p>¿Tomás alguna medicación actualmente? ¿cuál?</p>
 
-                        <input type="radio" name="medicacion-actual" id="medicacion-actual-si" value="si" required>
-                        <label for="medicacion-actual-si">Si</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="medicacion-actual" id="medicacion-actual-si" value="si" required>
+                            <label for="medicacion-actual-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="medicacion-actual" id="medicacion-actual-no" value="no">
+                            <label for="medicacion-actual-no">No</label>
+                        </div>
+                        
 
-                        <input type="radio" name="medicacion-actual" id="medicacion-actual-no" value="no">
-                        <label for="medicacion-actual-no">No</label>
-
-                        <label for="detalle-medicacion">Detalle:</label>
+                        <label for="detalle-medicacion">Detalle :</label>
                         <textarea 
                         name="detalle-medicacion" 
                         id="detalle-medicacion" 
@@ -229,58 +247,81 @@
                         <legend>Tratamiento con Roacután</legend>
                         <p>¿Estuviste o estás en tratamiento con este fármaco?</p>
 
-                        <input type="radio" name="tratamiento-roacutan" id="tratamiento-roacutan-si" value="si" required>
-                        <label for="tratamiento-roacutan-si">Si</label>
-
-                        <input type="radio" name="tratamiento-roacutan" id="tratamiento-roacutan-no" value="no">
-                        <label for="tratamiento-roacutan-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-roacutan" id="tratamiento-roacutan-si" value="si" required>
+                            <label for="tratamiento-roacutan-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-roacutan" id="tratamiento-roacutan-no" value="no">
+                            <label for="tratamiento-roacutan-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Diabetes o tiroides</legend>
                         <p>¿Padecés alguna de estas condiciones?</p>
 
-                        <input type="radio" name="diabetes-tiroides" id="diabetes-tiroides-si" value="si" required>
-                        <label for="diabetes-tiroides-si">Si</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="diabetes-tiroides" id="diabetes-tiroides-si" value="si" required>
+                            <label for="diabetes-tiroides-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="diabetes-tiroides" id="diabetes-tiroides-no" value="no">
+                            <label for="diabetes-tiroides-no">No</label>
+                        </div>
 
-                        <input type="radio" name="diabetes-tiroides" id="diabetes-tiroides-no" value="no">
-                        <label for="diabetes-tiroides-no">No</label>
                     </fieldset>
 
                     <fieldset>
                         <legend>Queloides</legend>
                         <p>¿Estuviste o estás en tratamiento por queloides o tenés tendencia a formarlos?</p>
 
-                        <input type="radio" name="tratamiento-queloides" id="tratamiento-queloides-si" value="si" required>
-                        <label for="tratamiento-queloides-si">Si</label>
-
-                        <input type="radio" name="tratamiento-queloides" id="tratamiento-queloides-no" value="no">
-                        <label for="tratamiento-queloides-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-queloides" id="tratamiento-queloides-si" value="si" required>
+                            <label for="tratamiento-queloides-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-queloides" id="tratamiento-queloides-no" value="no">
+                            <label for="tratamiento-queloides-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Anticoagulantes</legend>
                         <p>¿Tomás anticoagulantes actualmente?</p>
 
-                        <input type="radio" name="anticoagulantes" id="anticoagulantes-si" value="si" required>
-                        <label for="anticoagulantes-si">Si</label>
-
-                        <input type="radio" name="anticoagulantes" id="anticoagulantes-no" value="no">
-                        <label for="anticoagulantes-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="anticoagulantes" id="anticoagulantes-si" value="si" required>
+                            <label for="anticoagulantes-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="anticoagulantes" id="anticoagulantes-no" value="no">
+                            <label for="anticoagulantes-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Ácidos o peeling</legend>
                         <p>¿Te hiciste tratamientos con ácidos o peeling? ¿Hace cuánto tiempo?</p>
 
-
-                        <input type="radio" name="acidos-peeling" id="acidos-peeling-si" value="si" required>
-                        <label for="acidos-peeling-si">Si</label>
-
-                        <input type="radio" name="acidos-peeling" id="acidos-peeling-no" value="no">
-                        <label for="acidos-peeling-no">No</label>
-
-                        <label for="detalle-acidos-peeling">Detalle:</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="acidos-peeling" id="acidos-peeling-si" value="si" required>
+                            <label for="acidos-peeling-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="acidos-peeling" id="acidos-peeling-no" value="no">
+                            <label for="acidos-peeling-no">No</label>
+                        </div>
+                        
+                        <label for="detalle-acidos-peeling">Detalle :</label>
                         <textarea 
                         name="detalle-acidos-peeling" 
                         id="detalle-acidos-peeling"
@@ -294,33 +335,48 @@
                         <legend>Productos inyectados</legend>
                         <p>¿Tuviste algún producto inyectado en la zona en los últimos meses?</p>
 
-                        <input type="radio" name="producto-inyectado" id="producto-inyectado-si" value="si" required>
-                        <label for="producto-inyectado-si">Si</label>
-
-                        <input type="radio" name="producto-inyectado" id="producto-inyectado-no" value="no">
-                        <label for="producto-inyectado-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="producto-inyectado" id="producto-inyectado-si" value="si" required>
+                            <label for="producto-inyectado-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="producto-inyectado" id="producto-inyectado-no" value="no">
+                            <label for="producto-inyectado-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Embarazo o lactancia</legend>
                         <p>¿Estás embarazada o en período de lactancia?</p>
 
-                        <input type="radio" name="embarazada-lactancia" id="embarazada-lactancia-si" value="si" required>
-                        <label for="embarazada-lactancia-si">Si</label>
-
-                        <input type="radio" name="embarazada-lactancia" id="embarazada-lactancia-no" value="no">
-                        <label for="embarazada-lactancia-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="embarazada-lactancia" id="embarazada-lactancia-si" value="si" required>
+                            <label for="embarazada-lactancia-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="embarazada-lactancia" id="embarazada-lactancia-no" value="no">
+                            <label for="embarazada-lactancia-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
                         <legend>Tratamiento oncológico</legend>
                         <p>¿Estás en tratamiento oncológico actualmente?</p>
 
-                        <input type="radio" name="tratamiento-oncologico" id="tratamiento-oncologico-si" value="si" required>
-                        <label for="tratamiento-oncologico-si">Si</label>
-
-                        <input type="radio" name="tratamiento-oncologico" id="tratamiento-oncologico-no" value="no">
-                        <label for="tratamiento-oncologico-no">No</label>
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-oncologico" id="tratamiento-oncologico-si" value="si" required>
+                            <label for="tratamiento-oncologico-si">Si</label>
+                        </div>
+                        
+                        <div class="campo-radio">
+                            <input type="radio" name="tratamiento-oncologico" id="tratamiento-oncologico-no" value="no">
+                            <label for="tratamiento-oncologico-no">No</label>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
@@ -335,11 +391,17 @@
                         
                     <fieldset>
                         <legend>Consentimientos</legend>
-                        <input type="checkbox" name="casilla-acuerdo-micro" id="casilla-acuerdo-micro">
-                        <label for="casilla-acuerdo-micro">Deseo recibir avisos de promociones y novedades</label>
 
-                        <input type="checkbox" name="acepto-terminos-micro" id="acepto-terminos-micro" required>
-                        <label for="acepto-terminos-micro">Acepto términos y condiciones</label>
+                        <div class="field-checkbox">
+                            <input type="checkbox" name="casilla-acuerdo-micro" id="casilla-acuerdo-micro">
+                            <label for="casilla-acuerdo-micro">Deseo recibir avisos de promociones y novedades</label>
+                        </div>
+                        
+                        <div class="field-checkbox">
+                            <input type="checkbox" name="acepto-terminos-micro" id="acepto-terminos-micro" required>
+                            <label for="acepto-terminos-micro">Acepto términos y condiciones</label>
+                        </div>
+                        
                     </fieldset>
                         
                     <button type="submit">Reservar turno</button>
