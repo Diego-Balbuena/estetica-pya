@@ -192,7 +192,6 @@ body{
 .btn-servicio:hover {
     background-color: var(--dorado-hover);
     cursor: pointer;
-    
 }
 
 .card-servicio h3{
@@ -256,6 +255,31 @@ body{
     color: var(--texto-gris);
     text-align: center;
     font-style: italic;
+}
+
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.trabajo-item {
+    width: 100%;
+    max-width: calc(50% - 16px);;
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.06);
+}
+
+.trabajo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn-reserva {
@@ -440,6 +464,25 @@ html{
         color: var(--bg-oscuro);
         border-bottom: 2px solid var(--bg-oscuro);
     }
+
+    .galeria-grid {
+        gap: 16px;
+    }
+
+    .trabajo-item {
+        width: calc(33.333% - 16px); 
+        max-width: none;
+        height: 300px;
+    }
+
+    .trabajo-item img{
+        transition: all 0.4s ease;
+    }
+
+    .trabajo-item img:hover {
+        transform: scale(1.05);
+    }
+    
 }
 
 @keyframes fadein {
