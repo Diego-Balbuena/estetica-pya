@@ -72,11 +72,14 @@
 
 .imagen-tratamiento {
     width: 100%;
+    height: 300px;
 }
 
 .imagen-tratamiento img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 .detalle-tratamiento {
@@ -172,7 +175,7 @@
 
     .imagen-tratamiento {
         width: 100%;
-        height: 100%; 
+        height: 500px; 
     }
 
     .imagen-tratamiento img {
