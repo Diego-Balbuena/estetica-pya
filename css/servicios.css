@@ -149,10 +149,9 @@
     }
 
     .contenedor-tratamiento {
-    max-width: 1400px;
     gap: 50px;
     margin: 0 auto;
-    width: 95%;
+    width: 80%;
     }
 
     .tratamiento {
