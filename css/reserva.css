@@ -14,11 +14,40 @@
     align-items: center;
 }
 
-.oculto-seo {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+.contenedor-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-reserva {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    width: 85%;
+    margin: 24px 0px;
+}
+
+.texto-reserva h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.texto-reserva h3 {
+    color: var(--dorado);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.texto-reserva h4 {
+    color: var(--texto-gris);
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--texto-gris);
+    padding: 0px 10px;
 }
 
 .banner-reserva img {
@@ -144,6 +173,32 @@ textarea + p {
         filter: brightness(0.75);
     }
 
+    .contenedor-banner {
+        position: relative;
+        width: 100%;
+    }
+
+    .texto-reserva {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        animation: fadein 0.8s ease-out forwards;
+    }
+
+    .texto-reserva h2 {
+        font-size: 72px;
+    }
+
+    .texto-reserva h3 {
+        font-size: 40px;
+    }
+
+    .texto-reserva h4 {
+        font-size: 28px;
+    }
+
     .bloque-reserva {
         width: 90%;
         max-width: 1200px;
@@ -168,5 +223,16 @@ textarea + p {
     select,
     textarea {
         padding: 12px;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% + 30px));
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
     }
 }
