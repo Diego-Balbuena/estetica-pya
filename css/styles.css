@@ -110,12 +110,12 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
 }
 
-.texto-inicio h2 {
+.texto-inicio h1 {
     font-family: var(--fuente-titulo);
     font-size: 36px;
 }
 
-.texto-inicio h3 {
+.texto-inicio h2 {
     width: 80%;
     color: var(--dorado);
     font-size: 18px;
@@ -123,7 +123,7 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
 }
 
-.texto-inicio h4 {
+.texto-inicio h3 {
     color: var(--texto-gris);
     font-size: 14px;
     font-weight: 300;
@@ -416,15 +416,15 @@ html{
         font-size: 18px;
     }
 
-    .texto-inicio h2 {
+    .texto-inicio h1 {
         font-size: 84px;
     }
 
-    .texto-inicio h3 {
+    .texto-inicio h2 {
         font-size: 33px;
     }
 
-    .texto-inicio h4 {
+    .texto-inicio h3 {
         font-size: 24px;
     }
 

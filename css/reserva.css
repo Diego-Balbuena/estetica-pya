@@ -36,13 +36,13 @@
     text-transform: uppercase;
 }
 
-.texto-reserva h3 {
+.texto-reserva h1 {
     color: var(--dorado);
     font-size: 22px;
     font-weight: 500;
 }
 
-.texto-reserva h4 {
+.texto-reserva h3 {
     color: var(--texto-gris);
     font-size: 18px;
     font-weight: 400;
@@ -197,11 +197,11 @@ textarea + p {
         font-size: 72px;
     }
 
-    .texto-reserva h3 {
+    .texto-reserva h1 {
         font-size: 40px;
     }
 
-    .texto-reserva h4 {
+    .texto-reserva h3 {
         font-size: 28px;
     }
 
