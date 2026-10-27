@@ -62,6 +62,8 @@
     background-color: var(--bg-tarjeta);
     border-radius: 10px ;
     padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.06);
 }
 
 .detalle-servicio h2 {
