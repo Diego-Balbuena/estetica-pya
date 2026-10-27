@@ -139,7 +139,8 @@ body::-webkit-scrollbar {
     margin-bottom: 12px;
 }
 
-.servicios-inicio h2{
+.servicios-inicio h2,
+.galeria-inicio h2 {
     font-family: var(--fuente-titulo);
     color: var(--texto-blanco);
     font-weight: 500;
@@ -175,6 +176,12 @@ body::-webkit-scrollbar {
 .card-servicio img{
     width: 100%;
     display: block;
+}
+
+.card-servicio p {
+    padding: 0 16px;
+    color: var(--texto-gris);
+    line-height: 1.4;
 }
 
 .btn-servicio {
@@ -261,6 +268,22 @@ body::-webkit-scrollbar {
     font-style: italic;
 }
 
+/* GALERÍA (Flexbox + flex-wrap) */
+.galeria-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.galeria-intro {
+    width: 85%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--texto-gris);
+    line-height: 1.4;
+}
+
 .galeria-grid {
     display: flex;
     flex-wrap: wrap;
@@ -310,6 +333,25 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
+.texto-inicio .btn-reserva {
+    width: auto;
+    margin: 16px auto 0;
+    padding: 10px 32px;
+    background-color: transparent;
+    color: var(--dorado);
+    border: 1px solid var(--dorado);
+}
+
+.texto-inicio .btn-reserva:hover {
+    background-color: var(--dorado);
+    color: var(--bg-oscuro);
+}
+
+.galeria-inicio .btn-reserva {
+    margin: 24px;
+}
+
+/* ===== FOOTER ===== */
 footer {
     display: flex;
     justify-content: space-between;
@@ -361,7 +403,7 @@ footer {
 html{
     scroll-behavior: smooth;
 }
-
+/* MEDIA QUERY: ESCRITORIO (desde 768px) */
 @media (min-width: 768px) {
 
     .contenedor-header {
@@ -428,7 +470,9 @@ html{
         font-size: 24px;
     }
 
-    .servicios-inicio h2{
+    .servicios-inicio h2,
+    .nosotros-inicio h2,
+    .galeria-inicio h2 {
         font-size: 46px;
     }
 
@@ -449,10 +493,6 @@ html{
         border-color: rgba(218, 165, 32, 0.4); 
         box-shadow: 0 0 40px rgba(218, 165, 32, 0.15); 
         transform: translateY(-2px); 
-    }
-
-    .nosotros-inicio h2{
-        font-size: 46px;
     }
 
     .contenedor-nosotros {
@@ -487,7 +527,6 @@ html{
     .trabajo-item img:hover {
         transform: scale(1.05);
     }
-    
 }
 
 @keyframes fadein {

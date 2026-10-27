@@ -25,18 +25,21 @@
                 <li><a href="./index.html" class="activo">Inicio</a></li>
                 <li><a href="./index.html#servicios">Servicios</a></li>
                 <li><a href="./index.html#nosotros">Nosotros</a></li>
+                <li><a href="./index.html#galeria">Galería</a></li>
                 <li><a href="./reserva.html">Reservar Turno</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- 1. HERO: único h1 de la página + llamado a la acción -->
         <section id="inicio" class="contenedor-inicio">
             <div class="texto-inicio">
                 <span class="item-premium">Salón premium de estética</span>
                 <h1>PyA</h1>
                 <h2>Tu belleza, nuestra precisión</h2>
                 <h3>Con diagnóstico previo y técnicas avanzadas</h3>
+                <a href="reserva.html" class="btn-reserva">Reservar turno</a>
             </div>
             
             <div class="banner-inicio">
@@ -45,7 +48,7 @@
 
         </section>
 
-
+        <!-- 2. CARDS: servicios (imagen, h3, párrafo y botón) -->
         <section id="servicios" class="servicios-inicio">
 
             <h2>Servicios</h2>
@@ -54,26 +57,31 @@
                 <article class="card-servicio">
                     <img src="assets/img/pestanas.png" alt="Servicio de pestañas">
                     <h3>Pestañas</h3>
+                    <p>Pelo x pelo, tecnológicas 4D y lifting con tinte nutritivo para una mirada definida y natural.</p>
                     <a href="pestanas.html" class="btn-servicio">Más información</a>
                 </article>
                 <article class="card-servicio">
                     <img src="assets/img/Cejas.png" alt="Servicio de Cejas">
                     <h3>Cejas</h3>
+                    <p>Perfilado, laminado, henna y tinte para cejas prolijas que acompañan la forma de tu rostro.</p>
                     <a href="cejas.html" class="btn-servicio">Más información</a>
                 </article>
                 <article class="card-servicio">
                     <img src="assets/img/micropigmentacion.png" alt="Servicio de Micropigmentación">
                     <h3>Micropigmentación</h3>
+                    <p>Técnica semipermanente para cejas y labios, con diagnóstico previo y resultados armónicos.</p>
                     <a href="micropigmentacion.html" class="btn-servicio">Más información</a>
                 </article>
                 <article class="card-servicio">
                     <img src="assets/img/unas.png" alt="Servicio de Uñas">
                     <h3>Uñas</h3>
+                    <p>Soft gel, kapping y esmaltado semipermanente para manos cuidadas y duraderas.</p>
                     <a href="unas.html" class="btn-servicio">Más información</a>
                 </article>
             </div>
         </section>
 
+        <!-- 3. NOSOTROS: texto + video -->
         <section id="nosotros" class="nosotros-inicio">
             <h2>Sobre Nosotros</h2>
             <article class="contenedor-nosotros">
@@ -91,41 +99,44 @@
                     </video>
                     <figcaption>Conocé nuestro centro estético</figcaption>
                 </figure>
-
-                <div class="nosotros-texto">
-                    <h3>Nuestros trabajos</h3>
-                    <p>Cada técnica está pensada para resaltar tu belleza natural con precisión, seguridad y armonía. Conocé de cerca la calidad de nuestros tratamientos.</p>
-                </div>
-
-                <div class="galeria-grid">
-                    <article class="trabajo-item">
-                        <img src="assets/img/lifting_y_tinte_nutritivo_de_pestanas.png" alt="Resultado de servicio"">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/micropigmentacion_labios.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/esmaltado_semipermanente.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/kapping_de_unas.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/micropigmentacion_cejas.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/pestanas_tecnologicas_4d_w.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/unas_soft_gel.png" alt="Resultado de servicio">
-                    </article>
-                    <article class="trabajo-item">
-                        <img src="assets/img/micropigmentacion_labios_neutralizacion_de_labios.png" alt="Resultado de servicio">
-                    </article>
-                </div>
-
-                <a href="reserva.html" class="btn-reserva">Reservar Turno</a>
             </article>
+        </section>
+
+        <!-- 4. GALERÍA: 8 imágenes con Flexbox + flex-wrap -->
+        
+        <section id="galeria" class="galeria-inicio">
+
+            <h2>Nuestros trabajos</h2>
+            <p class="galeria-intro">Cada técnica está pensada para resaltar tu belleza natural con precisión, seguridad y armonía. Conocé de cerca la calidad de nuestros tratamientos.</p>
+                
+            <div class="galeria-grid">
+                <article class="trabajo-item">
+                    <img src="assets/img/lifting_y_tinte_nutritivo_de_pestanas.png" alt="Lifting y tinte nutritivo de pestañas"">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/micropigmentacion_labios.png" alt="Micropigmentación de labios">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/esmaltado_semipermanente.png" alt="Esmaltado semipermanente">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/kapping_de_unas.png" alt="Kapping de uñas">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/micropigmentacion_cejas.png" alt="Micropigmentación de cejas">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/pestanas_tecnologicas_4d_w.png" alt="Pestañas tecnológicas 4D W">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/unas_soft_gel.png" alt="Uñas soft gel">
+                </article>
+                <article class="trabajo-item">
+                    <img src="assets/img/micropigmentacion_labios_neutralizacion_de_labios.png" alt="Neutralización de labios con micropigmentación">
+                </article>
+            </div>
+
+            <a href="reserva.html" class="btn-reserva">Reservar Turno</a>
         </section>
 
     </main>
