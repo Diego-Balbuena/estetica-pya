@@ -477,15 +477,17 @@ html{
     }
 
     .contenedor-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         max-width: 1200px;
         margin: 0 auto;
         gap: 60px;
     }
 
     .card-servicio {
-        width: 100%;
+        flex: 1 1 calc(50% - 30px);
         transition: all 0.3s ease;
     }
 
